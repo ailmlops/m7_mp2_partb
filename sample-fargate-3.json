@@ -1,0 +1,28 @@
+{
+    "family": "sample-fargate",
+    "containerDefinitions": [
+        {
+            "name": "Patient_Survival",
+            "image": "125298610926.dkr.ecr.us-east-2.amazonaws.com/aimlops_m7_mp1_patientsurvival:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 8001,
+                    "hostPort": 8001,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": []
+        }
+    ],
+    "executionRoleArn": "arn:aws:iam::125298610926:role/ecsTaskExecutionRole_ajay",
+    "networkMode": "awsvpc",
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "1024",
+    "memory": "3072"
+}
