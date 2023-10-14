@@ -21,7 +21,7 @@ def predict_death_event1(age, anaemia, creatinine_phosphokinase, diabetes, eject
 
   return prediction
 
-title = "Patient Survival Prediction"
+title = "Patient Survival Prediction ver1.0"
 description = "Predict survival of patient with heart failure, given their clinical record"
 
 iface = gr.Interface(fn = predict_death_event,
